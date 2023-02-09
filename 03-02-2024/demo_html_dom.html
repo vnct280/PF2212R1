@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo_HTML_DOM</title>
+</head>
+<body>
+   <h1 id="title">Demo HTML DOM</h1>
+   <p id="content">This is a paragraph.</p>
+
+
+   <ul id="List-Lesson">
+    <li>Lesson 6 - Variable, Data Type and Operator</li>
+    <li>Lesson 7 - Practice Variable, Data Type and Operator</li>
+   </ul>
+   <script>
+    // thẻ <h1>
+    let  titleElement = document.getElementById("title");
+    console.log(titleElement);
+    console.log(titleElement.innerHTML);
+    titleElement.innerHTML = "Lesson 8 - Demo HTML Dom";
+    // thẻ <p>
+    let paragraphElement = document.getElementById("content");
+    console.log(paragraphElement);
+    console.log(paragraphElement.innerHTML);
+    paragraphElement.innerHTML = "With HTML DOM, we can change the content of a HTML tag"
+    // thay đổi màu chữ ở thẻ  H1
+        titleElement.style.color="red";
+    // Thay đổi màu nền của thẻ  <P>
+    paragraphElement.style.backgroundColor="orange";
+    
+    // Add thêm 1 thẻ "<li>" element vào thẻ <ul>
+        let listLessonElement = document.getElementById("List-Lesson");
+        // creat new <li> element
+        let newListItemElement = document.createElement("li");
+        newListItemElement.innerHTML = "Lesson 8 - HTML DOM";
+        
+        console.log(newListItemElement);
+        listLessonElement.appendChild(newListItemElement);
+   </script>
+</body>
+</html>
