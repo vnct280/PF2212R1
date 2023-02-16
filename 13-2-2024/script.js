@@ -53,3 +53,16 @@ let btnAction3 = document.getElementById("btn-action-3");
         
 
     });
+    // Bài 5
+let btnAction5 = document.getElementById("btn-action-5");
+    btnAction5.addEventListener("click", () => {
+        let n1 = parseFloat(document.getElementById("n1").value);
+        let n2 = parseFloat(document.getElementById("n2").value);
+        let n3 = parseFloat(document.getElementById("n3").value);
+      if (n1 > n2 && n1 > n3) 
+      alert("n1 lớn nhất");  
+      else if (n2 > n1 && n2 > n3) 
+      alert("n2 lớn nhất"); 
+      else if (n3 > n1 && n3 > n2)
+       alert("n3 lớn nhất"); 
+    });
