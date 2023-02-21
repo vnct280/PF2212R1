@@ -30,11 +30,14 @@ let btnAction3 = document.getElementById("btn-action-3");
        n >= 0 ? alert(`Giá trị tuyệt đối của n là ${+(n)}`) : alert(`Giá trị tuyệt đối của n là ${-(n)}`);
     });
     // Bài 4
+    
     let btnAction4 = document.getElementById("btn-action-4");
     btnAction4.addEventListener("click", () => {
         let day = parseInt(document.getElementById("day").value);
+        let input4 = document.getElementById("input4");
             if (day < 2 ) 
             alert("Null");
+             
             else if (day == 2) 
             alert("Monday");
             else if (day == 3) 
