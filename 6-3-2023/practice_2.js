@@ -1,3 +1,4 @@
+let number = parseInt(prompt("number"));
 function isPrimeNumber(number) {
     for (let i = 2; i < number; i ++) {
         if (number %i==0)
@@ -5,4 +6,5 @@ function isPrimeNumber(number) {
     }
     return true;
 }
-console.log(isPrimeNumber(4))
+console.log(isPrimeNumber(number));
+par

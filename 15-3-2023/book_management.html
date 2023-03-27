@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book management</title>
+</head>
+<body>
+    <h1>Book Management System</h1>
+    <form action="#">
+        <label for="">Name</label>
+        <input type="text" id="book-name" > <br><br>
+        <label for="">Catelory</label>
+        <select name="" id="book-catelory">
+            <option value="science">science</option>
+            <option value="novel">novel</option>
+            <option value="comic">comic</option></select> <br><br>
+        <label for="" >Price</label> 
+        <input type="number" id="book-price"><br> <br>
+        <label for="">Quantity</label>
+        <input type="number" id="book-quantity"><br><br>
+        
+        <!-- add new book -->
+        <button type="button"  id="btn-add">Add</button> 
+        <button type="reset">Reset</button><br> <br>
+
+        <label for="">Search</label>
+        <input type="text" id="search-name">
+        <button id="btn-search" type="button" onclick="seachBook()">Search</button> <br> <br>
+        <button id="btn-delete" onclick="deleteBook()" >DeleteBook</button>
+        <button id="btn-delete" onclick="UpdateBook()" >UpdateBook</button>
+    </form>
+    
+    <script src="./Script.js"></script>
+</body>
+</html>
